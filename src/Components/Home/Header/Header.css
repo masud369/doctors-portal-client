@@ -1,0 +1,19 @@
+.heder-container {
+    height:800px;
+    width:100%;
+    position:relative;
+    background-image: url("../../../images/bg-chair.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heder-container::after{
+    height:700px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 33%;
+    right: 0;
+    background-color: #3a4256;
+    z-index: -1;
+}

@@ -1,0 +1,23 @@
+.appointment-container{
+    background-image: url("../../images/appointment-bg.png");
+    background-position: center;
+    height: 311px; 
+    position: relative;
+}
+.appointment-container::before{
+    content: " ";
+    display: block;
+    background: #3A4256;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+}
+.docter-img{
+    position: relative;
+    top: -95px;
+}
+.docter-img img{
+
+}

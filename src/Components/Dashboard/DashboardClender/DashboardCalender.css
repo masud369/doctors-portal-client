@@ -1,0 +1,4 @@
+.react-calendar__tile--active{
+    background: linear-gradient(90deg, rgba(24,210,176,1) 19%, rgba(15,207,233,1) 59%);
+
+}

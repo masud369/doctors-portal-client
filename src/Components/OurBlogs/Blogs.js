@@ -34,19 +34,17 @@ const Blogs = () => {
       </div>
       <div className="my-5">
         <div className="row">
-          <div className="col-md-4 left-blog-container p-4 rounded overflow-hidden">
-            <h6 className="text-light pt-3 ps-3">Rashed Kabir</h6>
-            <small className="text-light ps-3">22 Aug 2022</small>
-            <h5 className="py-3 text-light ps-3 py-4">Check at least a docter in a  <br /> yer for your teeth</h5>
-            <FontAwesomeIcon className="text-light ps-3 fs-1" style={{paddingTop:'90px'}} icon={faArrowRightLong} />
+          <div className="card m-auto col-md-4 box-shadow overflow-hidden blog-hover border-0" style={{ width: "18rem",marginLeft:'12px' }} >
+          <div className="card-body p-5">
+            <h6 className="pt-3 ms-3">Rashed Kabir</h6>
+            <small className="ms-3">22 Aug 2022</small>
+            <h5 className="py-3 ms-3 ">Check at least a docter in a  <br /> yer for your teeth</h5>
+            <FontAwesomeIcon className="ms-3 fs-1" style={{marginTop:'15px'}} icon={faArrowRightLong} />
           </div>
-          <div className="col-md-8">
-            <div className="row">
+          </div>
             {blogsInfo.map((blog) => (
               <BlogDetails blog={blog} />
             ))}
-            </div>
-          </div>
         </div>
       </div>
     </div>

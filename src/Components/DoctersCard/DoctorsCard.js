@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DoctorsCard = ({ doctor }) => {
   return (
-    <div className="col-md-4">
-      <div className="card border-0" style={{ width: "18rem" }}>
+    <div className="col-md-4 col-sm-12">
+      <div className="card border-0 m-auto" style={{ width: "18rem" }}>
         <div className="card-body">
           {
             doctor.imagef? <img className="img-fluid" style={{height:'200px'}} src={"data:image/png;base64," + doctor.imagef.img} /> : <img className="img-fluid" style={{height:'200px'}} src={`https://doctors-portal-server-2qfr.onrender.com/${doctor.img}`} alt="" />

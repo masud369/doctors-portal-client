@@ -3,8 +3,8 @@ import './BlogDetails.css'
 
 const BlogDetails = ({ blog }) => {
   return (
-    <div className="col-md-6">
-      <div className="card border-0 box-shadow" style={{ width: "18rem" }}>
+    <div className="col-md-4">
+      <div className="card m-auto border-0 box-shadow blog-hover" style={{ width: "18rem" }}>
         <div className="card-body p-5">
           <div className="py-4 d-flex justify-content-left">
             <img
@@ -20,7 +20,7 @@ const BlogDetails = ({ blog }) => {
           </div>
           <div className="">
             <h6 className="text-left">{blog.title}</h6>
-            <p className="card-text text-left py-3 text-secondary ">{blog.description}</p>
+            <p className="card-text text-left py-3">{blog.description}</p>
           </div>
         </div>
       </div>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const TestimonialDetails = ({testimonial}) => {
     return (
-        <div className="col-md-4 py-5">
-            <div className="card border-0 box-shadow" style={{width: '18rem'}}>
+        <div className="col-md-4 col-sm-12 py-5">
+            <div className="card m-auto border-0 box-shadow" style={{width: '18rem'}}>
               <div className="card-body">
                 <p className="card-text text-center p-3">
                   {testimonial.description}

@@ -14,3 +14,15 @@
     z-index: -1;
     border-radius: 5px;
 }
+.blog-hover{
+    color:#938f8f;
+}
+.blog-hover:hover{
+    background: linear-gradient(90deg, rgba(24,210,176,1) 19%, rgba(15,207,233,1) 59%);
+    opacity: 0.9;
+    border-radius: 5px;
+    color:#FFFFFF !important;
+}
+
+
+

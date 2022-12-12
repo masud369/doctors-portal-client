@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="container">
         <div className="row">
-          <div className="col-md-3" style={{ marginTop: "34px" }}>
+          <div className="col-md-3 col-xm-12 col-sm-12" style={{ marginTop: "34px" }}>
             <li className="text-secondary tex-left my-2">
               Emergancy Dental Care
             </li>
@@ -20,7 +20,7 @@ const Footer = () => {
             <li className="text-secondary tex-left my-2">Tooth Extraction</li>
             <li className="text-secondary tex-left my-2">Check Up</li>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-xm-12 col-sm-12">
             <h5 style={{ color: "#1cc7c1" }}>Services</h5>
             <li className="text-secondary tex-left my-2">
               Emergancy Dental Care
@@ -34,7 +34,8 @@ const Footer = () => {
             <li className="text-secondary tex-left my-2">Check Up</li>
             <li className="text-secondary tex-left my-2">Check Up</li>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-xm-12 col-sm-12">
+          <div className="m-auto">
             <h5 style={{ color: "#1cc7c1" }}>Oral Health</h5>
             <li className="text-secondary tex-left my-2">
               Emergancy Dental Care
@@ -47,8 +48,10 @@ const Footer = () => {
             <li className="text-secondary tex-left my-2">Check Up</li>
             <li className="text-secondary tex-left my-2">Check Up</li>
             <li className="text-secondary tex-left my-2">Check Up</li>
+            </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-xm-12 col-sm-12">
+            
             <h5 style={{ color: "#1cc7c1" }}>Our Address</h5>
             <li className="text-secondary tex-left my-2">
               New York-101010 Hubson <br /> Yards
@@ -76,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-secondary text-center">
-          Copyright 2020 All Rights Reserved
+          Copyright 2020 All Rig
         </p>
       </div>
     </div>

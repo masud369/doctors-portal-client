@@ -34,8 +34,13 @@ console.log(isDocters);
   return (
     <div className="sidebar-container py-4 ps-3">
       <Menu>
-        <Menu.Item className="text-light fw-bolder fs-16 menu-item my-3" as={Link} to="/user/dashboard">
+        <Menu.Item className="text-light fw-bolder fs-16 menu-item my-3" as={Link} to="/home">
           <FontAwesomeIcon className="pe-2" icon={faDashboard} /> Home
+        </Menu.Item>
+        <br />
+        <br />
+        <Menu.Item className="text-light fw-bolder fs-16 menu-item my-3" as={Link} to="/myAppointmen">
+          <FontAwesomeIcon className="pe-2" icon={faDashboard} /> My Appointmen
         </Menu.Item>
         <br />
         <br />

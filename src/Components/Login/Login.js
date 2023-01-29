@@ -8,14 +8,15 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { UserContext } from "../../App";
 import OldUser from "./OldUser/OldUser";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useContext } from "react";
 
 const app = initializeApp(firebaseConfig);
 const Login = () => {
-  const [loggedinUser, setLoggedinUser] = useState(UserContext);
+  const [loggedinUser, setLoggedinUser] = useContext(UserContext);
   const [newUser, setNewUser] = useState([]);
   const [checkLogin, setCheckLogin] = useState(false);
 
-
+console.log(loggedinUser.email);
 const location = useLocation();
 const navigate = useNavigate();
 

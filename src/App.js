@@ -8,6 +8,8 @@ import Login from "./Components/Login/Login";
 import PrivetRoute from "./Components/Login/PrivetRoute/PrivetRoute";
 import Dashboard from "./Components/Dashboard/Dashboard/Dashboard";
 import AddDoctor from "./Components/AddDoctor/AddDoctor";
+import About from "./Components/About";
+import MyAppointmen from "./Components/MyAppointmen/MyAppointmen";
 
 export const UserContext = createContext();
 
@@ -17,15 +19,20 @@ function App() {
   return (
     <UserContext.Provider value={[loggedinUser, setLoggedinUser]}>
       <div>
-      <p>{loggedinUser.email}</p>
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/appointment" element={<AppointmentPage />} />
 
               <Route path="/dashboard/appointment" element={<PrivetRoute />}>
-                <Route path="/dashboard/appointment" element={<Dashboard />}/>
-                
+                <Route path="/dashboard/appointment" element={<Dashboard />}/>  
+              </Route>
+              <Route path="/myAppointmen" element={<PrivetRoute />}>
+                <Route path="/myAppointmen" element={<MyAppointmen />}/>  
+              </Route>
+              <Route path="/about" element={<PrivetRoute />}>
+                <Route path="/about" element={<About />}/>  
               </Route>
 
             <Route path="/user/addDocotors" element={<AddDoctor />} />

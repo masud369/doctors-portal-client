@@ -6,7 +6,7 @@ const PrivetRoute = () => {
     const [loggedinUser,setLoggedinUser] = useContext(UserContext)
     const token = sessionStorage.getItem("toke");
     const location = useLocation();
-    console.log(token)
+    console.log(loggedinUser.email)
     return (
         loggedinUser.email || token? <Outlet />: <Navigate to="/login" replace state={{from:location}}/>
     );
